@@ -14,7 +14,7 @@ function App() {
   const login = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/v1/auth/login",
+        "https://fullstack-task-manager-backend-fmuv.onrender.com/api/v1/auth/login",
         {
           email,
           password,
@@ -32,7 +32,7 @@ function App() {
   const createTask = async () => {
     try {
       await axios.post(
-        "http://localhost:3000/api/v1/tasks",
+        "https://fullstack-task-manager-backend-fmuv.onrender.com/api/v1/tasks",
         {
           title: "Frontend Task",
           description:
